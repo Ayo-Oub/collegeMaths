@@ -57,10 +57,13 @@ section .container {
   justify-content: space-between;
 }
 section .boxes {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   gap: 6px;
-  margin-top: 20px;
+  margin-top: 20px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }
 section .box {
   display: flex;
@@ -111,8 +114,8 @@ section .box p a:hover {
     width: 90%;
     margin: 0 auto;
   }
-  .boxes {
-    flex-direction: column;
-    gap: 9px;
+  section .boxes {
+    grid-template-columns: 1fr;
+  gap: 5px;
   }
 }
